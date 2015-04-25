@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aysegul Bulut, Exam-2</title>
+ <link rel="stylesheet" type="text/css" href="style/exam2problem.css" />
+  
+ <script src="js/exam2problem.js"></script>
+ 
+</head>
+ 
+<body>
+ 
+<section id="main">
+    <h1>Exam-2</h1>
+    <hr>
+      <hr>
+    <select onchange="MenuChoice()" id="menu">
+        <option>Please select an option:</option>
+        <option>Category List</option>
+        <option>Product Category</option>
+        <option>Change Description</option>
+        <option>Delete Category</option>
+        <option>About</option>
+    </select>
+</section>
+
+<section id="sec1" class="sec1">
+    <label id="x">Please click the button to see the Category List: </label>
+    <br><br>
+        <button onclick="catrgyList()" id="orders">Category List</button> <hr>
+        <br>
+    <label id="orderdisplay"></label>
+</section>
+
+<section id="sec2" class="sec2">
+    <label class="form">Please enter Category Name: </label>
+    <input type="text"  placeholder="Category Name" id="custid" class="frm">
+    
+    <br><br>
+    <label class="form">Please enter Category Description: </label>
+    <input type="text" placeholder="Category Description" id="custname" class="frm">
+    <br><br>
+    <button onclick="CreateCategory()" id="orders">Add a New Product Category</button> <hr>
+    <br>
+    <label id="rslt"></label>
+</section>
+
+<section id="sec3" class="sec3">
+    <label class="form">Please enter Category ID: </label>
+    <input type="number"  placeholder="Category ID" id="catID" class="frm">
+    
+    <br><br>
+    <label class="form">Please enter Category Description: </label>
+    <input type="text" placeholder="Category Description" id="catDesc" class="frm">
+    <br><br>
+    <button onclick="UpdateCategoryDesc()" id="orders">Add a New Product Category</button> <hr>
+    <br>
+    <label id="result"></label>
+</section>
+
+<section id="sec4" class="sec4">
+    <label class="form">Please enter Category ID: </label>
+    <input type="number"  placeholder="Category ID" id="categoryID" class="frm">
+        
+    <button onclick="Delete()" id="orders">Delete Customer</button> <hr>
+        <br>
+    <label id="display"></label>
+</section>
+
+<section id="sec5" class="sec5">
+    <h1>AysegulBulut</h1>
+    <h2>IS 491-VT Mobile Development</h2>
+    <h3>Thank you for the course!</h3>
+</section>
+</body>
+</html>
